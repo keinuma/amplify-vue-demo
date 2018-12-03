@@ -1,0 +1,17 @@
+projects:
+  amplifyvuedemo:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        graphQLApiId: z4u352u6tfdevot4uqvrwzrnqm
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        region: ap-northeast-1
+      endpoints:
+        prod: >-
+          https://5l4zxdi7zjasnfcd6lv4nkbbli.appsync-api.ap-northeast-1.amazonaws.com/graphql
