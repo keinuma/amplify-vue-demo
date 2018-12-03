@@ -7,11 +7,10 @@ projects:
       - ./amplify/**
     extensions:
       amplify:
-        graphQLApiId: z4u352u6tfdevot4uqvrwzrnqm
         codeGenTarget: javascript
         generatedFileName: ''
         docsFilePath: src/graphql
-        region: ap-northeast-1
+        graphQLApiId: pnleh2ywo5ewpi7l2gt63ivdjy
       endpoints:
         prod: >-
-          https://5l4zxdi7zjasnfcd6lv4nkbbli.appsync-api.ap-northeast-1.amazonaws.com/graphql
+          https://zp7v2l36wff33oq2hycfhg5kxa.appsync-api.ap-northeast-1.amazonaws.com/graphql
