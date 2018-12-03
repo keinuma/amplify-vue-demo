@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import AmplifyStore from '../store'
 import { AmplifyEventBus, AmplifyPlugin, components } from 'aws-amplify-vue'
 import * as AmplifyModules from 'aws-amplify'
+import CreatePost from '../views/CreatePost'
 
 Vue.use(Router)
 Vue.use(AmplifyPlugin, AmplifyModules)
@@ -41,20 +42,25 @@ function getUser() {
 
 
 const router = new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/auth',
-      name: 'auth',
-      component: components.Authenticator
-    }
-  ]
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: Home
+        },
+        {
+            path: '/post/new',
+            name: 'createPost',
+            component: CreatePost
+        },
+        {
+            path: '/auth',
+            name: 'auth',
+            component: components.Authenticator
+        }
+    ]
 })
 
 router.beforeResolve(async (to, from, next) => {

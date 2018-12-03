@@ -5,6 +5,10 @@ import store from './store'
 
 import Amplify from 'aws-amplify'
 import aws_exports from './aws-exports'
+import ElementUI from 'element-ui'
+import './styles.scss'
+
+Vue.use(ElementUI)
 
 Amplify.configure(aws_exports)
 
